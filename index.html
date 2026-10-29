@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Bilal Ahmad - Computer Science Student (5th Semester) at Qureshi University, Lahore (2024 - Expected 2028). Certified in Google AI Essentials (Coursera, 2026). Skilled in C++, Java, SQL, HTML, CSS, JavaScript. Zero-scroll interactive portfolio." />
+  <title>Bilal Ahmad | Computer Science - Qureshi University, Lahore</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "cyber-bg": "#070b14",
+            "cyber-surface": "#0f172a",
+            "cyber-card": "rgba(15, 23, 42, 0.75)",
+            "cyber-indigo": "#6366f1",
+            "cyber-cyan": "#06b6d4",
+            "cyber-emerald": "#10b981",
+            "cyber-purple": "#a855f7"
+          },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+            mono: ["'JetBrains Mono'", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- External Stylesheet (Preserved & Modular) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- External JavaScript Engine (Preserved & Modular) -->
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-[#070b14] text-slate-100 antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+
+  <!-- Ambient Backdrop Glows & Subtle Grid -->
+  <div class="ambient-bg"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- Master Zero-Scroll Cockpit Application -->
+  <div class="cockpit-app">
+
+    <!-- Top Executive Header Bar (Fixed Height 56px) -->
+    <header class="cockpit-header">
+      <!-- Identity & Status -->
+      <div class="flex items-center gap-3">
+        <div class="relative group cursor-pointer" data-tab="overview">
+          <div class="w-9 h-9 rounded-lg overflow-hidden border border-indigo-500/40 p-0.5 bg-slate-800">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+              alt="Bilal Ahmad" 
+              class="w-full h-full object-cover object-top rounded-md"
+            />
+          </div>
+          <span class="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-[#070b14]"></span>
+        </div>
+        
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold tracking-tight text-white text-sm sm:text-base">Bilal Ahmad</span>
+            <span class="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-mono bg-indigo-500/15 border border-indigo-500/30 text-indigo-300">
+              5th Sem BSCS
+            </span>
+          </div>
+          <div class="text-[11px] font-mono text-slate-400 flex items-center gap-1.5 truncate">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            <span class="truncate">Qureshi University, Lahore (2024 - 2028)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Switches Views Without Scrolling) -->
+      <nav class="hidden md:flex items-center gap-1 bg-slate-900/60 p-1 rounded-lg border border-slate-800/80">
+        <button class="nav-tab-btn active" data-tab="overview">
+          <span class="material-symbols-outlined text-[17px]">dashboard</span>
+          <span>Overview</span>
+          <span class="badge-num">1</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="projects">
+          <span class="material-symbols-outlined text-[17px]">code_blocks</span>
+          <span>Projects</span>
+          <span class="badge-num">2</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="skills">
+          <span class="material-symbols-outlined text-[17px]">terminal</span>
+          <span>Skills</span>
+          <span class="badge-num">3</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="education">
+          <span class="material-symbols-outlined text-[17px]">school</span>
+          <span>Education & Certs</span>
+          <span class="badge-num">4</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="contact">
+          <span class="material-symbols-outlined text-[17px]">mail</span>
+          <span>Contact</span>
+          <span class="badge-num">5</span>
+        </button>
+      </nav>
+
+      <!-- Action Utilities: Live Clock & Print/Download CV -->
+      <div class="flex items-center gap-2">
+        <div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900/70 border border-slate-800 text-xs font-mono text-slate-300">
+          <span class="material-symbols-outlined text-[15px] text-cyan-400">schedule</span>
+          <span id="lahore-time">Lahore, PK</span>
+        </div>
+
+        <button 
+          data-action="download-cv" 
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-medium text-xs transition-all shadow-md shadow-indigo-600/25 active:scale-95"
+          title="Print or Save CV as PDF"
+        >
+          <span class="material-symbols-outlined text-[16px]">print</span>
+          <span class="hidden sm:inline">Print / Save CV</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Tab Bar (For Small Screens) -->
+    <div class="md:hidden flex items-center justify-around bg-slate-900/90 border-b border-slate-800 py-1.5 px-1 shrink-0 z-20">
+      <button class="nav-tab-btn text-xs py-1 px-2 active" data-tab="overview">
+        <span class="material-symbols-outlined text-[16px]">dashboard</span>
+        <span>Overview</span>
+      </button>
+      <button class="nav-tab-btn text-xs py-1 px-2" data-tab="projects">
+        <span class="material-symbols-outlined text-[16px]">code_blocks</span>
+        <span>Projects</span>
+      </button>
+      <button class="nav-tab-btn text-xs py-1 px-2" data-tab="skills">
+        <span class="material-symbols-outlined text-[16px]">terminal</span>
+        <span>Skills</span>
+      </button>
+      <button class="nav-tab-btn text-xs py-1 px-2" data-tab="education">
+        <span class="material-symbols-outlined text-[16px]">school</span>
+        <span>Edu</span>
+      </button>
+      <button class="nav-tab-btn text-xs py-1 px-2" data-tab="contact">
+        <span class="material-symbols-outlined text-[16px]">mail</span>
+        <span>Contact</span>
+      </button>
+    </div>
+
+    <!-- Main Viewport Stage: Never Scrolls The Page -->
+    <main class="cockpit-stage">
+
+      <!-- ====================================================================
+           TAB 1: OVERVIEW (Bento Cockpit - Everything Fits at a Single Glance)
+           ==================================================================== -->
+      <section id="panel-overview" class="stage-panel active w-full h-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 w-full h-full max-h-full">
+
+          <!-- Left Column (4 Cols): Profile Card & Quick Actions -->
+          <div class="lg:col-span-4 bento-card p-4 flex flex-col justify-between overflow-hidden">
+            <div>
+              <!-- Portrait & Status -->
+              <div class="flex items-start gap-4">
+                <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-indigo-500/50 shadow-xl shadow-indigo-950/40 shrink-0">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+                    alt="Bilal Ahmad - Computer Science Student" 
+                    class="w-full h-full object-cover object-top"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                </div>
+
+                <div class="flex-1 min-w-0">
+                  <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-[10px] font-mono mb-1">
+                    <span class="status-pulse"></span>
+                    <span>Available for Internships</span>
+                  </div>
+                  <h1 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight truncate">Bilal Ahmad</h1>
+                  <p class="text-xs text-indigo-300 font-medium">Computer Science Student • 5th Semester</p>
+                  <p class="text-[11px] text-slate-400 mt-1 flex items-center gap-1 truncate">
+                    <span class="material-symbols-outlined text-[13px] text-cyan-400">location_on</span>
+                    Lahore, Pakistan
+                  </p>
+                </div>
+              </div>
+
+              <!-- Academic Badge & Quick Bio -->
+              <div class="mt-3 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1.5">
+                <div class="flex items-center justify-between text-[11px] font-mono text-cyan-300 border-b border-slate-800/80 pb-1">
+                  <span>Qureshi University, Lahore</span>
+                  <span>2024 – 2028</span>
+                </div>
+                <p class="text-[11.5px] leading-relaxed text-slate-300">
+                  Undergraduate in 5th semester specializing in systems programming, database architecture, and full-stack software development. Certified in <strong class="text-cyan-300 font-semibold">Google AI Essentials</strong> (Coursera 2026).
+                </p>
+              </div>
+
+              <!-- Quick Contact Badges -->
+              <div class="mt-3 grid grid-cols-2 gap-2 text-xs font-mono">
+                <button data-copy="bilalahmad.cs@qureshi.edu.pk" class="p-2 rounded-lg bg-slate-900/50 hover:bg-slate-800/80 border border-slate-800 text-slate-300 hover:text-white flex items-center gap-1.5 transition text-left truncate">
+                  <span class="material-symbols-outlined text-[15px] text-indigo-400">email</span>
+                  <span class="truncate text-[11px]">Copy Email</span>
+                </button>
+                <button data-copy="+92 300 1234567" class="p-2 rounded-lg bg-slate-900/50 hover:bg-slate-800/80 border border-slate-800 text-slate-300 hover:text-white flex items-center gap-1.5 transition text-left truncate">
+                  <span class="material-symbols-outlined text-[15px] text-emerald-400">call</span>
+                  <span class="truncate text-[11px]">Copy Phone</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Profile Bottom CTAs -->
+            <div class="mt-3 pt-3 border-t border-slate-800 flex gap-2">
+              <button data-tab="projects" class="flex-1 py-2 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition shadow-sm">
+                <span>View 3 Projects</span>
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </button>
+              <button data-tab="contact" class="flex-1 py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 border border-slate-700 transition">
+                <span>Contact Bilal</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Center Column (4 Cols): Education & Core Skills Stack -->
+          <div class="lg:col-span-4 flex flex-col gap-3 h-full">
+
+            <!-- Education & Cert Highlight Card -->
+            <div class="bento-card p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2.5">
+                  <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-[16px]">school</span>
+                    Education & Credential
+                  </span>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">Verified</span>
+                </div>
+
+                <!-- Degree -->
+                <div class="mb-3">
+                  <div class="flex items-center justify-between text-xs font-semibold text-white">
+                    <span>Qureshi University, Lahore</span>
+                    <span class="text-cyan-400 font-mono text-[11px]">2024 – Exp. 2028</span>
+                  </div>
+                  <div class="text-[11.5px] text-slate-300 font-medium">BS in Computer Science (Currently 5th Semester)</div>
+                  <p class="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                    Core Focus: Object-Oriented Programming (C++/Java), Relational Database Management Systems (SQL), Web Technologies.
+                  </p>
+                </div>
+
+                <!-- Certificate -->
+                <div class="p-2.5 rounded-lg bg-cyan-950/20 border border-cyan-500/25">
+                  <div class="flex items-center justify-between text-xs font-semibold text-cyan-200">
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[15px] text-cyan-400">verified</span>
+                      Google AI Essentials
+                    </span>
+                    <span class="font-mono text-[10px] px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300">2026</span>
+                  </div>
+                  <div class="text-[11px] text-slate-300 mt-0.5">Authorized by Google via Coursera</div>
+                  <p class="text-[10.5px] text-slate-400 mt-0.5">
+                    Practical AI prompt engineering, generative models, workflow automation & responsible AI.
+                  </p>
+                </div>
+              </div>
+
+              <button data-tab="education" class="mt-2 text-left text-[11px] font-mono text-indigo-400 hover:text-indigo-300 flex items-center gap-1">
+                <span>View full academic curriculum</span>
+                <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+              </button>
+            </div>
+
+            <!-- Core Skills 6-Box Grid Card -->
+            <div class="bento-card p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2.5">
+                  <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-[16px]">code</span>
+                    Technical Competencies (6 Skills)
+                  </span>
+                  <span class="text-[10px] font-mono text-slate-400">Hands-on</span>
+                </div>
+
+                <div class="grid grid-cols-3 gap-2">
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-indigo-400">C++</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">OOP & Pointers</div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-cyan-400">Java</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">OOP & Collections</div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-emerald-400">SQL</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Queries & Schema</div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-amber-400">HTML5</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Semantic Web</div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-purple-400">CSS3</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">Tailwind & UI</div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-center hover:border-indigo-500/40 transition">
+                    <div class="text-xs font-bold text-yellow-400">JavaScript</div>
+                    <div class="text-[10px] text-slate-400 font-mono mt-0.5">ES6+ & DOM</div>
+                  </div>
+                </div>
+              </div>
+
+              <button data-tab="skills" class="mt-2 text-left text-[11px] font-mono text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+                <span>Explore complete skills matrix</span>
+                <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right Column (4 Cols): Featured Projects & Live Interactive Card -->
+          <div class="lg:col-span-4 bento-card p-4 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2.5">
+                <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+                  Featured Projects (3)
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">Live Demo</span>
+              </div>
+
+              <!-- Interactive Mini Flashcard Preview Right in Cockpit -->
+              <div class="mb-3">
+                <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 mb-1.5">
+                  <span class="text-white font-semibold flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+                    1. Flashcard Generator
+                  </span>
+                  <span class="text-indigo-400">Click to Flip ↷</span>
+                </div>
+
+                <!-- 3D Mini Flashcard -->
+                <div class="flashcard-3d-scene h-28">
+                  <div id="overview-mini-flashcard" class="flashcard-3d-card">
+                    <!-- Front -->
+                    <div class="flashcard-face flashcard-face-front">
+                      <div class="flex justify-between items-center text-[10px] font-mono text-indigo-300">
+                        <span>STUDY CARD: ACTIVE RECALL</span>
+                        <span class="px-1.5 py-0.2 rounded bg-indigo-500/20">C++ MEMORY</span>
+                      </div>
+                      <div class="text-xs font-semibold text-slate-100 text-center py-1">
+                        How does dynamic memory allocation work in C++?
+                      </div>
+                      <div class="text-[9.5px] font-mono text-slate-400 text-center">
+                        Tap anywhere to reveal answer ➜
+                      </div>
+                    </div>
+                    <!-- Back -->
+                    <div class="flashcard-face flashcard-face-back">
+                      <div class="flex justify-between items-center text-[10px] font-mono text-emerald-300">
+                        <span>ANSWER VERIFIED</span>
+                        <span class="px-1.5 py-0.2 rounded bg-emerald-500/20">HEAP / POINTER</span>
+                      </div>
+                      <div class="text-[11.5px] text-slate-100 text-center py-1">
+                        Via <code class="text-cyan-300">new</code> operator on heap; must be deallocated with <code class="text-cyan-300">delete</code> to avoid leaks!
+                      </div>
+                      <div class="text-[9.5px] font-mono text-emerald-400 text-center">
+                        ✓ Click again to return
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 & 3 Quick Cards -->
+              <div class="space-y-2">
+                <div data-tab="projects" class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 cursor-pointer transition flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-semibold text-white flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-[15px] text-cyan-400">group</span>
+                      2. University Club Website
+                    </div>
+                    <div class="text-[10.5px] text-slate-400">Campus society management & SQL registration system</div>
+                  </div>
+                  <span class="material-symbols-outlined text-[16px] text-slate-500">chevron_right</span>
+                </div>
+
+                <div data-tab="projects" class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 cursor-pointer transition flex items-center justify-between">
+                  <div>
+                    <div class="text-xs font-semibold text-white flex items-center gap-1.5">
+                      <span class="material-symbols-outlined text-[15px] text-amber-400">local_cafe</span>
+                      3. University Cafe Website
+                    </div>
+                    <div class="text-[10.5px] text-slate-400">Online cafeteria ordering with real-time bill calculation</div>
+                  </div>
+                  <span class="material-symbols-outlined text-[16px] text-slate-500">chevron_right</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Box Bottom CTA -->
+            <button data-tab="projects" class="mt-3 w-full py-2 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 border border-slate-700 transition">
+              <span class="material-symbols-outlined text-[15px] text-emerald-400">play_circle</span>
+              <span>Launch Interactive Project Studio</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 2: PROJECTS SHOWCASE (Interactive Project Studio - Zero Scroll)
+           ==================================================================== -->
+      <section id="panel-projects" class="stage-panel w-full h-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 w-full h-full max-h-full">
+
+          <!-- Left Side (4 Cols): Project Selection Menu -->
+          <div class="lg:col-span-4 bento-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px]">folder</span>
+                  Select Project to Test
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">3 Apps Built</span>
+              </div>
+
+              <!-- Project 1 Button -->
+              <div 
+                data-project="flashcard" 
+                class="project-selector-item active p-3 rounded-xl border border-indigo-500/40 bg-indigo-500/10 cursor-pointer transition mb-2.5"
+              >
+                <div class="flex items-start justify-between">
+                  <div>
+                    <span class="text-xs font-bold text-white block">1. Flashcard Generator</span>
+                    <span class="text-[11px] text-indigo-300">Active Recall & 3D Interactive Quizzer</span>
+                  </div>
+                  <span class="px-1.5 py-0.5 rounded text-[9.5px] font-mono bg-indigo-500/20 text-indigo-300">Live Demo</span>
+                </div>
+                <div class="flex flex-wrap gap-1 mt-2">
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">JavaScript ES6</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">CSS 3D</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">LocalState</span>
+                </div>
+              </div>
+
+              <!-- Project 2 Button -->
+              <div 
+                data-project="club" 
+                class="project-selector-item p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800/60 cursor-pointer transition mb-2.5"
+              >
+                <div class="flex items-start justify-between">
+                  <div>
+                    <span class="text-xs font-bold text-white block">2. University Club Website</span>
+                    <span class="text-[11px] text-cyan-300">Campus Society Portal & Registration</span>
+                  </div>
+                  <span class="px-1.5 py-0.5 rounded text-[9.5px] font-mono bg-cyan-500/20 text-cyan-300">SQL System</span>
+                </div>
+                <div class="flex flex-wrap gap-1 mt-2">
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">SQL Schema</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">HTML5/CSS3</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">JS Validation</span>
+                </div>
+              </div>
+
+              <!-- Project 3 Button -->
+              <div 
+                data-project="cafe" 
+                class="project-selector-item p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800/60 cursor-pointer transition"
+              >
+                <div class="flex items-start justify-between">
+                  <div>
+                    <span class="text-xs font-bold text-white block">3. University Cafe Website</span>
+                    <span class="text-[11px] text-amber-300">Digital Menu & Live Cart Calculation</span>
+                  </div>
+                  <span class="px-1.5 py-0.5 rounded text-[9.5px] font-mono bg-amber-500/20 text-amber-300">Kiosk UI</span>
+                </div>
+                <div class="flex flex-wrap gap-1 mt-2">
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">Dynamic Pricing</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">Cart Array</span>
+                  <span class="text-[9.5px] font-mono px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">Receipt Gen</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Note -->
+            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-[11px] text-slate-400">
+              <span class="text-indigo-400 font-semibold">Architecture Note:</span> Built by Bilal Ahmad combining algorithmic rigor with responsive frontend engineering.
+            </div>
+          </div>
+
+          <!-- Right Side (8 Cols): Dynamic Interactive Project Stage -->
+          <div class="lg:col-span-8 bento-card p-4 flex flex-col justify-between overflow-hidden">
+
+            <!-- PANE 1: Flashcard Generator Interactive Studio -->
+            <div data-project-pane="flashcard" class="project-detail-pane flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                  <div>
+                    <h2 class="text-base font-bold text-white flex items-center gap-2">
+                      <span class="material-symbols-outlined text-indigo-400">flip</span>
+                      Flashcard Generator Interactive Engine
+                    </h2>
+                    <p class="text-xs text-slate-400">Click card below to flip between Question and Answer. Press "Next Card" to cycle concepts.</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span id="flashcard-tag" class="px-2 py-0.5 rounded text-[10px] font-mono bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">C++ OOP</span>
+                    <span id="flashcard-counter" class="text-xs font-mono text-slate-400">1/4</span>
+                  </div>
+                </div>
+
+                <!-- 3D Interactive Card Container -->
+                <div class="flashcard-3d-scene h-52 sm:h-56">
+                  <div id="demo-flashcard" class="flashcard-3d-card">
+                    <!-- Front Side -->
+                    <div class="flashcard-face flashcard-face-front">
+                      <div class="flex justify-between items-center text-xs font-mono text-indigo-300">
+                        <span class="flex items-center gap-1.5">
+                          <span class="material-symbols-outlined text-[15px]">help</span>
+                          QUESTION (ACTIVE RECALL)
+                        </span>
+                        <span class="text-[10px] px-2 py-0.5 rounded bg-indigo-500/20">CLICK ANYWHERE TO REVEAL</span>
+                      </div>
+
+                      <div id="flashcard-question" class="text-base sm:text-lg font-bold text-white text-center px-4 py-2">
+                        What is the role of Virtual Functions in C++?
+                      </div>
+
+                      <div class="flex justify-between items-center text-[11px] font-mono text-slate-400">
+                        <span>Bilal Ahmad • Qureshi University</span>
+                        <span class="text-indigo-400">3D Card Flip ➜</span>
+                      </div>
+                    </div>
+
+                    <!-- Back Side -->
+                    <div class="flashcard-face flashcard-face-back">
+                      <div class="flex justify-between items-center text-xs font-mono text-emerald-300">
+                        <span class="flex items-center gap-1.5">
+                          <span class="material-symbols-outlined text-[15px]">check_circle</span>
+                          EXPLANATION / ANSWER
+                        </span>
+                        <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20">VERIFIED ANSWER</span>
+                      </div>
+
+                      <div id="flashcard-answer" class="text-sm sm:text-base font-medium text-emerald-100 text-center px-4 py-2 leading-relaxed">
+                        They enable runtime polymorphism by allowing derived classes to override base implementations via vtables.
+                      </div>
+
+                      <div class="flex justify-between items-center text-[11px] font-mono text-emerald-400">
+                        <span>CS Semester 5 Milestone</span>
+                        <span>Click to flip back ⮌</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Simulator Controls -->
+              <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                <div class="text-xs text-slate-400 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-indigo-400 text-[18px]">touch_app</span>
+                  <span>Supports keyboard, touch, and 3D CSS perspective transforms.</span>
+                </div>
+                <button id="flashcard-next-btn" class="py-2 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-md shadow-indigo-600/30">
+                  <span>Next Concept Card</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- PANE 2: University Club Website Interactive Studio -->
+            <div data-project-pane="club" class="project-detail-pane hidden flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                  <div>
+                    <h2 class="text-base font-bold text-white flex items-center gap-2">
+                      <span class="material-symbols-outlined text-cyan-400">diversity_3</span>
+                      University Club Website — Portal Simulator
+                    </h2>
+                    <p class="text-xs text-slate-400">Campus society management system with relational SQL member storage and event feeds.</p>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/20 text-cyan-300">Qureshi Univ Labs</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <!-- Simulator Left: Society Controls -->
+                  <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-800 space-y-2.5">
+                    <label class="block text-xs font-mono text-slate-300">Select Active University Society:</label>
+                    <select id="club-select" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-cyan-500">
+                      <option value="Qureshi Computing Society">Qureshi Computing Society</option>
+                      <option value="ACM Student Chapter">ACM Student Chapter</option>
+                      <option value="University AI & Robotics Club">University AI & Robotics Club</option>
+                    </select>
+
+                    <div class="text-[11px] text-slate-400 leading-snug">
+                      <span class="text-white font-medium">SQL Schema:</span> Stores student IDs, membership tiers, registered workshops, and executive committee elections.
+                    </div>
+
+                    <div class="p-2 rounded bg-slate-950/70 border border-slate-800/80 font-mono text-[10.5px] text-slate-300">
+                      <span class="text-cyan-400">SELECT</span> name, role <span class="text-cyan-400">FROM</span> club_members <span class="text-cyan-400">WHERE</span> status = 'Active';
+                    </div>
+                  </div>
+
+                  <!-- Simulator Right: Live Member Pass Mockup -->
+                  <div class="p-3 rounded-lg bg-gradient-to-br from-cyan-950/30 to-slate-900/80 border border-cyan-500/30 flex flex-col justify-between">
+                    <div class="flex justify-between items-start">
+                      <div>
+                        <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider block">Official Member Pass</span>
+                        <span class="text-sm font-bold text-white">Bilal Ahmad</span>
+                        <span class="text-[11px] text-slate-300 block">Roll: CS24-501 • 5th Semester</span>
+                      </div>
+                      <span class="material-symbols-outlined text-cyan-400 text-[28px]">qr_code_2</span>
+                    </div>
+
+                    <div class="mt-3 pt-2 border-t border-cyan-500/20 text-[11px]">
+                      <div class="text-slate-400">Affiliated Society:</div>
+                      <div id="club-badge-society" class="font-bold text-cyan-200">Qureshi Computing Society</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Bar -->
+              <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-xs text-slate-400">Features: SQL Authentication, Role-based Dashboards, Event RSVPs</span>
+                <button onclick="showToast('Member pass verified in university database!')" class="py-2 px-4 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold transition">
+                  Verify Pass in DB
+                </button>
+              </div>
+            </div>
+
+            <!-- PANE 3: University Cafe Website Interactive Studio -->
+            <div data-project-pane="cafe" class="project-detail-pane hidden flex flex-col justify-between h-full">
+              <div>
+                <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                  <div>
+                    <h2 class="text-base font-bold text-white flex items-center gap-2">
+                      <span class="material-symbols-outlined text-amber-400">restaurant</span>
+                      University Cafe Kiosk — Live Order Simulator
+                    </h2>
+                    <p class="text-xs text-slate-400">Interactive ordering system for students & faculty with real-time bill calculations.</p>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/20 text-amber-300">Live Kiosk</span>
+                </div>
+
+                <!-- Cafe Menu Items Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+                  <button data-item="Campus Espresso" data-price="180" class="cafe-item-add p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 hover:border-amber-500/50 text-left transition group">
+                    <span class="material-symbols-outlined text-amber-400 text-[18px]">coffee</span>
+                    <span class="text-xs font-bold text-white block mt-1">Campus Espresso</span>
+                    <span class="text-[11px] font-mono text-slate-400">PKR 180</span>
+                    <span class="text-[9.5px] text-amber-400 font-mono block mt-1">+ Click to Add</span>
+                  </button>
+
+                  <button data-item="Club Sandwich" data-price="320" class="cafe-item-add p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 hover:border-amber-500/50 text-left transition group">
+                    <span class="material-symbols-outlined text-amber-400 text-[18px]">lunch_dining</span>
+                    <span class="text-xs font-bold text-white block mt-1">Club Sandwich</span>
+                    <span class="text-[11px] font-mono text-slate-400">PKR 320</span>
+                    <span class="text-[9.5px] text-amber-400 font-mono block mt-1">+ Click to Add</span>
+                  </button>
+
+                  <button data-item="Cold Brew Latte" data-price="250" class="cafe-item-add p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 hover:border-amber-500/50 text-left transition group">
+                    <span class="material-symbols-outlined text-amber-400 text-[18px]">local_cafe</span>
+                    <span class="text-xs font-bold text-white block mt-1">Cold Brew Latte</span>
+                    <span class="text-[11px] font-mono text-slate-400">PKR 250</span>
+                    <span class="text-[9.5px] text-amber-400 font-mono block mt-1">+ Click to Add</span>
+                  </button>
+
+                  <button data-item="Chocolate Muffin" data-price="150" class="cafe-item-add p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 hover:border-amber-500/50 text-left transition group">
+                    <span class="material-symbols-outlined text-amber-400 text-[18px]">bakery_dining</span>
+                    <span class="text-xs font-bold text-white block mt-1">Chocolate Muffin</span>
+                    <span class="text-[11px] font-mono text-slate-400">PKR 150</span>
+                    <span class="text-[9.5px] text-amber-400 font-mono block mt-1">+ Click to Add</span>
+                  </button>
+                </div>
+
+                <!-- Current Bill Display -->
+                <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-mono text-slate-400 block uppercase">Tray Summary</span>
+                    <span class="text-xs text-slate-300">Total payable at counter pickup:</span>
+                  </div>
+                  <div class="text-right">
+                    <span id="cafe-order-total" class="text-lg font-mono font-bold text-amber-400">PKR 0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Bar -->
+              <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-xs text-slate-400">Engineered with JavaScript state objects and DOM dynamic recalculation.</span>
+                <button id="cafe-checkout-btn" class="py-2 px-4 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold transition shadow-md shadow-amber-600/30">
+                  Generate Order Token
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 3: SKILLS MATRIX (6 Core Skills High-Impact Grid - Zero Scroll)
+           ==================================================================== -->
+      <section id="panel-skills" class="stage-panel w-full h-full">
+        <div class="bento-card p-4 sm:p-5 w-full h-full flex flex-col justify-between overflow-hidden">
+          <div>
+            <!-- Section Header -->
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+              <div>
+                <h2 class="text-lg font-extrabold text-white flex items-center gap-2">
+                  <span class="material-symbols-outlined text-cyan-400">terminal</span>
+                  Technical Competencies & Engineering Stack
+                </h2>
+                <p class="text-xs text-slate-400">Hands-on practical proficiency developed across coursework and semester projects at Qureshi University, Lahore.</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-indigo-300">6 Core Skills</span>
+            </div>
+
+            <!-- 6 Skills Grid (3 Columns x 2 Rows) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+              <!-- Skill 1: C++ -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                      C++ Programming
+                    </span>
+                    <span class="text-[10px] font-mono text-indigo-400">Advanced Core</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    Object-Oriented Programming, pointers & manual memory management, templates, operator overloading, and algorithmic data structures.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>Semester 3 & 4 Labs</span>
+                  <span class="text-indigo-400">Qureshi Univ</span>
+                </div>
+              </div>
+
+              <!-- Skill 2: Java -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                      Java
+                    </span>
+                    <span class="text-[10px] font-mono text-cyan-400">OOP & Systems</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    Class hierarchies, abstraction, interfaces, exception handling, Java Collections Framework (ArrayList, HashMap), and multithreading basics.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>Semester 4 & 5 OOP</span>
+                  <span class="text-cyan-400">Enterprise Core</span>
+                </div>
+              </div>
+
+              <!-- Skill 3: SQL -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                      SQL & Relational DBs
+                    </span>
+                    <span class="text-[10px] font-mono text-emerald-400">Database Eng.</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    Relational schema design, normalization (1NF-3NF), complex JOINs, indexing, aggregation, foreign keys, and transaction integrity.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>DBMS Practical Practicals</span>
+                  <span class="text-emerald-400">MySQL / PostgreSQL</span>
+                </div>
+              </div>
+
+              <!-- Skill 4: HTML5 -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-amber-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                      HTML5
+                    </span>
+                    <span class="text-[10px] font-mono text-amber-400">Web Foundation</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    Clean semantic markup, W3C compliance, accessibility (ARIA), form validation attributes, and optimized DOM structures for fast rendering.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>Web Engineering Track</span>
+                  <span class="text-amber-400">Semantic UI</span>
+                </div>
+              </div>
+
+              <!-- Skill 5: CSS3 -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+                      CSS3 & Tailwind CSS
+                    </span>
+                    <span class="text-[10px] font-mono text-purple-400">Modern Styling</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    Responsive design with Flexbox & CSS Grid, 3D perspective transforms, glassmorphic UI effects, dark obsidian styling, and print formatting.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>UI/UX Architecture</span>
+                  <span class="text-purple-400">Responsive Engine</span>
+                </div>
+              </div>
+
+              <!-- Skill 6: JavaScript -->
+              <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-yellow-500/40 transition flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-sm font-bold text-white flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                      JavaScript (ES6+)
+                    </span>
+                    <span class="text-[10px] font-mono text-yellow-400">Client Engine</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-300 leading-snug">
+                    DOM manipulation, event delegation, Async/Await, Fetch API, array higher-order methods (map/filter/reduce), and client state management.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+                  <span>Interactive Applications</span>
+                  <span class="text-yellow-400">Vanilla & DOM</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skills Matrix Footer Info -->
+          <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-xs text-slate-400">
+              <span class="material-symbols-outlined text-[17px] text-emerald-400">verified</span>
+              <span>All 6 skills utilized in semester production websites & verified in lab evaluations.</span>
+            </div>
+            <button data-tab="projects" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+              <span>See Skills in Action (3 Projects)</span>
+              <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 4: EDUCATION & CERTIFICATIONS (Qureshi Univ + Google AI - Zero Scroll)
+           ==================================================================== -->
+      <section id="panel-education" class="stage-panel w-full h-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 w-full h-full max-h-full">
+
+          <!-- Left Card: Academic Degree (Qureshi University, Lahore) -->
+          <div class="bento-card p-4 sm:p-5 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[17px]">school</span>
+                  Academic Degree Program
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Currently Enrolled</span>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-indigo-400 text-[22px]">account_balance</span>
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-white">Qureshi University, Lahore</h3>
+                  <div class="text-xs text-indigo-300 font-medium">Bachelor of Science in Computer Science (BSCS)</div>
+                  <div class="text-[11px] font-mono text-cyan-400 mt-0.5">Session: 2024 – Expected 2028 • Currently in 5th Semester</div>
+                </div>
+              </div>
+
+              <!-- Key Coursework Breakdown -->
+              <div class="mt-4 space-y-2">
+                <div class="text-xs font-mono text-slate-300 uppercase tracking-wide">Core Academic Curriculum:</div>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800">
+                    <span class="font-semibold text-white block">Data Structures (C++)</span>
+                    <span class="text-[10.5px] text-slate-400">Arrays, Linked Lists, Trees, Stacks, Queues</span>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800">
+                    <span class="font-semibold text-white block">OOP Systems (Java)</span>
+                    <span class="text-[10.5px] text-slate-400">Encapsulation, Inheritance, Polymorphism</span>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800">
+                    <span class="font-semibold text-white block">Database Systems (SQL)</span>
+                    <span class="text-[10.5px] text-slate-400">Relational Algebra, Normalization, Queries</span>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800">
+                    <span class="font-semibold text-white block">Web Engineering</span>
+                    <span class="text-[10.5px] text-slate-400">HTML5, CSS3, JavaScript ES6+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic Standout Note -->
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>Campus: Lahore, Pakistan</span>
+              <span class="font-mono text-indigo-400">BSCS 2024–2028</span>
+            </div>
+          </div>
+
+          <!-- Right Card: Professional Certification (Google AI Essentials Coursera 2026) -->
+          <div class="bento-card p-4 sm:p-5 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[17px]">verified</span>
+                  Professional Certification
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">Verified Credential</span>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-cyan-400 text-[22px]">psychology</span>
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-bold text-white">Google AI Essentials</h3>
+                  <div class="text-xs text-cyan-300 font-medium">Issued by Google via Coursera</div>
+                  <div class="text-[11px] font-mono text-emerald-400 mt-0.5">Completion Year: 2026 • Verified Online Credential</div>
+                </div>
+              </div>
+
+              <!-- Covered Competencies -->
+              <div class="mt-4 space-y-2">
+                <div class="text-xs font-mono text-slate-300 uppercase tracking-wide">Key Competencies Mastered:</div>
+                <div class="space-y-1.5 text-xs text-slate-300">
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-[16px] shrink-0">check_circle</span>
+                    <div>
+                      <strong class="text-white">Generative AI Tools & Prompt Engineering:</strong> Crafting high-precision prompts for coding acceleration, debugging, and ideation.
+                    </div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-[16px] shrink-0">check_circle</span>
+                    <div>
+                      <strong class="text-white">AI-Powered Workflow Automation:</strong> Integrating smart assistance into software development life cycles and database queries.
+                    </div>
+                  </div>
+                  <div class="p-2 rounded-lg bg-slate-900/60 border border-slate-800 flex items-start gap-2">
+                    <span class="material-symbols-outlined text-cyan-400 text-[16px] shrink-0">check_circle</span>
+                    <div>
+                      <strong class="text-white">Responsible & Ethical AI:</strong> Preventing hallucination, bias detection, and ensuring software security with AI models.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification Footer -->
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1 text-cyan-400 font-mono">
+                <span class="material-symbols-outlined text-[15px]">badge</span>
+                Coursera Certified 2026
+              </span>
+              <button data-action="download-cv" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                Include in CV Print ➜
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 5: CONTACT & CONNECT (Direct Inquiries - Zero Scroll)
+           ==================================================================== -->
+      <section id="panel-contact" class="stage-panel w-full h-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 w-full h-full max-h-full">
+
+          <!-- Left Side (5 Cols): Direct Coordinates & Availability -->
+          <div class="lg:col-span-5 bento-card p-4 sm:p-5 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[17px]">contact_mail</span>
+                  Direct Coordinates
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Open to Talk</span>
+              </div>
+
+              <h2 class="text-lg font-bold text-white">Let's Connect & Collaborate</h2>
+              <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                Currently open for software engineering internships, junior developer roles, and technical collaborations in Lahore or remote.
+              </p>
+
+              <!-- Coordinates List -->
+              <div class="mt-4 space-y-2.5 text-xs">
+                <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-indigo-400 text-[18px]">email</span>
+                    <div>
+                      <div class="text-[10px] font-mono text-slate-400">Institutional Email</div>
+                      <div class="font-semibold text-white">bilalahmad.cs@qureshi.edu.pk</div>
+                    </div>
+                  </div>
+                  <button data-copy="bilalahmad.cs@qureshi.edu.pk" class="text-[11px] font-mono text-indigo-400 hover:text-indigo-300 px-2 py-1 rounded bg-slate-800">
+                    Copy
+                  </button>
+                </div>
+
+                <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-emerald-400 text-[18px]">location_on</span>
+                    <div>
+                      <div class="text-[10px] font-mono text-slate-400">Location & University</div>
+                      <div class="font-semibold text-white">Lahore, Pakistan • Qureshi University</div>
+                    </div>
+                  </div>
+                  <span class="text-[10px] font-mono text-emerald-400">PKT (UTC+5)</span>
+                </div>
+
+                <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-cyan-400 text-[18px]">code</span>
+                    <div>
+                      <div class="text-[10px] font-mono text-slate-400">Skills Available For Hire</div>
+                      <div class="font-semibold text-white">C++, Java, SQL, HTML, CSS, JavaScript</div>
+                    </div>
+                  </div>
+                  <span class="text-[10px] font-mono text-cyan-400">5th Sem</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action -->
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400">Response turnaround: Within 24 hours</span>
+              <button data-action="download-cv" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                Download PDF CV ➜
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side (7 Cols): Direct Interactive Inquiry Form -->
+          <div class="lg:col-span-7 bento-card p-4 sm:p-5 flex flex-col justify-between overflow-hidden">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[17px]">send</span>
+                  Send Quick Inquiry
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">Instant Dispatch</span>
+              </div>
+
+              <form id="cockpit-contact-form" class="space-y-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label for="contact-name" class="block text-[11px] font-mono text-slate-300 mb-1">Your Name *</label>
+                    <input 
+                      type="text" 
+                      id="contact-name" 
+                      required 
+                      placeholder="e.g. Dr. Salman / Recruiter" 
+                      class="w-full bg-slate-900/80 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
+                    />
+                  </div>
+                  <div>
+                    <label for="contact-email" class="block text-[11px] font-mono text-slate-300 mb-1">Your Email Address *</label>
+                    <input 
+                      type="email" 
+                      id="contact-email" 
+                      required 
+                      placeholder="e.g. contact@company.com" 
+                      class="w-full bg-slate-900/80 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contact-message" class="block text-[11px] font-mono text-slate-300 mb-1">Message / Project Inquiry *</label>
+                  <textarea 
+                    id="contact-message" 
+                    rows="4" 
+                    required 
+                    placeholder="Hello Bilal, we would like to interview you for a software role / discuss your Flashcard Generator..." 
+                    class="w-full bg-slate-900/80 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition resize-none"
+                  ></textarea>
+                </div>
+
+                <button 
+                  type="submit" 
+                  class="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-indigo-600 via-indigo-700 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-semibold text-xs transition shadow-md shadow-indigo-600/25 flex items-center justify-center gap-2 active:scale-[0.99]"
+                >
+                  <span class="material-symbols-outlined text-[16px]">send</span>
+                  <span>Dispatch Message to Bilal Ahmad</span>
+                </button>
+              </form>
+            </div>
+
+            <div class="mt-2 text-center text-[10.5px] font-mono text-slate-500">
+              Direct recipient: <code class="text-slate-400">bilalahmad.cs@qureshi.edu.pk</code> (Qureshi University, Lahore)
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Status Dock (Fixed Height 36px) -->
+    <footer class="cockpit-dock">
+      <!-- Active View Indicator -->
+      <div class="flex items-center gap-2">
+        <span class="status-pulse"></span>
+        <span id="dock-active-tab" class="truncate">Active View: Overview [Tab 1/5]</span>
+      </div>
+
+      <!-- Keyboard Hotkey Guide (No Scrolling Needed!) -->
+      <div class="hidden md:flex items-center gap-3 text-slate-400">
+        <span class="text-indigo-400 font-semibold">Zero-Scroll Hotkeys:</span>
+        <span class="hover:text-white cursor-pointer" data-tab="overview"><kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 text-[10px]">1</kbd> Overview</span>
+        <span class="hover:text-white cursor-pointer" data-tab="projects"><kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 text-[10px]">2</kbd> Projects</span>
+        <span class="hover:text-white cursor-pointer" data-tab="skills"><kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 text-[10px]">3</kbd> Skills</span>
+        <span class="hover:text-white cursor-pointer" data-tab="education"><kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 text-[10px]">4</kbd> Edu</span>
+        <span class="hover:text-white cursor-pointer" data-tab="contact"><kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-300 text-[10px]">5</kbd> Contact</span>
+        <span class="text-slate-500">|</span>
+        <span class="text-slate-400">Use <kbd class="px-1 py-0.5 rounded bg-slate-800 text-[10px]">←</kbd> <kbd class="px-1 py-0.5 rounded bg-slate-800 text-[10px]">→</kbd> to cycle</span>
+      </div>
+
+      <!-- System Pill -->
+      <div class="flex items-center gap-1.5 text-cyan-400">
+        <span class="material-symbols-outlined text-[14px]">lock</span>
+        <span class="text-[11px]">Zero-Scroll Viewport</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive Toast Notification -->
+  <div id="toast-notification">
+    <span class="material-symbols-outlined text-indigo-400 text-[18px]">info</span>
+    <span id="toast-message">Notification</span>
+  </div>
+
+</body>
+</html>
